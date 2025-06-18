@@ -1,0 +1,42 @@
+.# ########################### #
+#  EagleView+ Backend .gitignore  #
+# ########################### #
+
+# --- Dependencias de Node.js ---
+# La carpeta más importante a ignorar. Se reconstruye con `npm install`.
+node_modules/
+
+# --- Archivos de Variables de Entorno ---
+# ¡CRÍTICO! Contiene secretos como contraseñas y claves de API.
+# NUNCA debe estar en el repositorio.
+.env
+.env.*
+
+# --- Archivos de Log y Debugging ---
+# Archivos generados por npm o durante la ejecución para registrar eventos o errores.
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# --- Archivos del Sistema Operativo ---
+# Archivos de metadatos generados por macOS y Windows que no son parte del código.
+.DS_Store
+Thumbs.db
+
+# --- Archivos de Configuración de Editores ---
+# Configuraciones personales de tu editor de código para evitar conflictos en el equipo.
+.vscode/
+!.vscode/extensions.json
+.idea/
+
+# --- Directorios de Build (para el futuro) ---
+# Si en el futuro usas TypeScript o una herramienta de empaquetado,
+# el código compilado irá aquí y no debe ser versionado.
+/dist
+/build
+/out
+
+# --- Archivos de Cobertura de Pruebas ---
+# Generados por herramientas de testing para medir qué parte del código está cubierta por pruebas.
+coverage/
+lcov.info
