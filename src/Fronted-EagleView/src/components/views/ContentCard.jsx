@@ -387,7 +387,7 @@ const DetailsModalInternal = ({ initialContent, onClose }) => {
                 </ActionButton>
               </ActionsRow>
               
-              <Overview><h4>Sipnosis</h4><p>{synopsis || 'No disponible.'}</p></Overview>
+              <Overview><h4>Sinopsis</h4><p>{synopsis || 'No disponible.'}</p></Overview>
               {languageNames && <div style={{marginTop: '20px'}}><h4>Idiomas</h4><p style={{color: '#ccc'}}>{languageNames}</p></div>}
               {uniqueStreamingSources.length > 0 && <div style={{marginTop: '20px'}}><h4>Disponible en</h4><PlatformsGrid>{uniqueStreamingSources.map(s=><img key={s.id_streaming_source} src={s.logo_path} alt={s.name} title={s.name}/>)}</PlatformsGrid></div>}
             </InfoColumn>
